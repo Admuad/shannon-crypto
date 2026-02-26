@@ -1,0 +1,77 @@
+{
+  "name": "shannon-crypto",
+  "version": "0.1.0",
+  "description": "Autonomous AI-powered smart contract security auditing system",
+  "keywords": [
+    "smart-contract",
+    "security",
+    "auditing",
+    "ethereum",
+    "solidity",
+    "defi",
+    "pentesting",
+    "blockchain"
+  ],
+  "author": "Admuad",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "test": "vitest",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "benchmark": "npm run test:benchmark",
+    "audit": "node dist/cli.js audit",
+    "report": "node dist/cli.js report",
+    "workspace": "node dist/cli.js workspace",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "^0.2.38",
+    "@temporalio/activity": "^1.11.0",
+    "@temporalio/client": "^1.11.0",
+    "@temporalio/worker": "^1.11.0",
+    "@temporalio/workflow": "^1.11.0",
+    "ethers": "^6.13.0",
+    "viem": "^2.21.0",
+    "openai": "^4.73.0",
+    "zod": "^4.3.6",
+    "chalk": "^5.0.0",
+    "commander": "^13.0.0",
+    "inquirer": "^10.0.0",
+    "ora": "^8.0.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@vitest/ui": "^2.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.0",
+    "prettier": "^3.4.0",
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Admuad/shannon-crypto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Admuad/shannon-crypto/issues"
+  },
+  "homepage": "https://github.com/Admuad/shannon-crypto#readme",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Admuad"
+  }
+}

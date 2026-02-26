@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+dist/
+.pnp.*
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+*.test.ts
+*.spec.ts
+
+# Python (for tool wrappers)
+__pycache__/
+*.pyc
+.Python
+venv/
+.venv/
+
+# Foundry
+cache/
+broadcast/
+out/
+forge-cache/
+
+# Audit artifacts
+audit-logs/
+workspaces/
+reports/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
+tmp/
